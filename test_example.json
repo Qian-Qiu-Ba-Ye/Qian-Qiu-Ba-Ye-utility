@@ -1,17 +1,17 @@
 [
     {
-        "image_path": "template/test1.jpg",
-        "name": "超级农民",
-        "type": "传奇建筑",
-        "effect": "【触发效果】",
-        "description": "当回合结束时，对所有敌方部队造成一点伤害,如果有部队被击杀，自己+1/+1",
+        "image_path": "card_images/test1.jpg",
+        "name": "西周农民",
+        "type": "农民-西周",
+        "effect": "【启动效果】",
+        "description": "我方回合主阶微中，横置:广生一点人口资源",
         "color_scheme": 3,
         "mana_cost": "0 0 0 0 0",
         "power": 0,
-        "toughness": 0
+        "toughness": 1
     },
     {
-        "image_path": "template/test2.jpg",
+        "image_path": "card_images/test2.jpg",
         "name": "平城",
         "type": "传奇建筑 - 北魏",
         "effect": "【启动效果】",
