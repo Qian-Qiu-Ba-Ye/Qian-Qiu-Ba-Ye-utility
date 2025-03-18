@@ -87,6 +87,15 @@ class Card:
         if not os.path.exists(self.image_path):
             self.image_path="template/test.jpg"
         picture=Image.open(self.image_path)
+        original_width, original_height = picture.size
+        target_width=original_width
+        target_height=original_width*0.57/0.75
+
+        left = (original_width - target_width) / 2
+        top = (original_height - target_height) / 2
+        right = left + target_width
+        bottom = top + target_height
+        picture = picture.crop((left, top, right, bottom))
         picture=picture.resize((int(self.width*0.75),int(self.width*0.57)))
         if picture.mode != 'RGBA':
             picture = picture.convert('RGBA')
